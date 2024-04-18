@@ -23,7 +23,8 @@ app.use(cookiesParser()); // ay ya9bal mini cookies
 app.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000",
+    // origin: "http://localhost:3000",
+    origin: "https://authentication-frontend-app.vercel.app",
   })
 );
 
