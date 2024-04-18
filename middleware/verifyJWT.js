@@ -14,7 +14,7 @@ const verifyJWT = (req, res, next) => {
         console.log(err)
       return res.status(401).json({ message: "Invalid token" });
     }
-    console.log('====>',req.cookies)
+    // console.log('====>',req.cookies)
     req.user = decoded.UserInfo.id;
     // console.log(decoded)
     // console.log(req.cookies);
